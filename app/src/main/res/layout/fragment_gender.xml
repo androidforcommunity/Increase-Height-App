@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".starter.GenderFragment"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/sex_text"
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/gender_ques" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sex_text"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:contentDescription="@string/male"
+                android:src="@drawable/ic_male" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:contentDescription="@string/female"
+                android:src="@drawable/ic_female" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next_btn_name"
+            style="@style/FragmentButtonStyle"
+            android:text="@string/next_btn" />
+
+    </RelativeLayout>
+
+</layout>

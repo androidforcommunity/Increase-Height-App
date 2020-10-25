@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Increase Height</string>
+    <string name="app_subtitle">Increase your Height</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Starter Fragment Strings -->
+    <string name="name_ques">What’s Your Name? 😎</string>
+    <string name="name_hint">Robert</string>
+    <string name="gender_ques">What’s Your Gender?😜</string>
+    <string name="age_ques">How old are you? 🤔</string>
+    <string name="height_ques">What’s your height? 📏</string>
+    <string name="weight_ques">What’s your weight? ⏲</string>
+
+    <!-- Button Text -->
+    <string name="next_btn">Next</string>
+    <string name="done_btn">Done</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age_num">25</string>
+
+
 </resources>

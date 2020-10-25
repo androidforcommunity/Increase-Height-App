@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.therealsanjeev.increaseheight.starter.NameFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/name_text"
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/name_ques" />
+
+
+        <EditText
+            android:id="@+id/enter_name"
+            style="@style/EditTextFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_text"
+            android:hint="@string/name_hint" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_name"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/ic_smiley_face" />
+
+
+        <Button
+            android:id="@+id/next_btn_name"
+            style="@style/FragmentButtonStyle"
+            android:text="@string/next_btn" />
+
+    </RelativeLayout>
+
+
+</layout>
