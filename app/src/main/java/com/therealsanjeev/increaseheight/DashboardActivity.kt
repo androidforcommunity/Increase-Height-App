@@ -20,6 +20,7 @@ class DashboardActivity : AppCompatActivity() {
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
         val relativeLayoutBounce = findViewById<RelativeLayout>(R.id.item1)
         relativeLayoutBounce.setOnClickListener {
+
             relativeLayoutBounce.startAnimation(bounceAnimation)
         }
 
