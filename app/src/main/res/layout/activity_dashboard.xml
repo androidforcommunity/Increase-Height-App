@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_view"
     tools:context=".DashboardActivity">
 
     <RelativeLayout
@@ -121,13 +122,20 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_below="@id/linearLayout"
+            android:id="@+id/h_line0"
+            android:background="#7A7A7A"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
         <TextView
             android:id="@+id/textView"
             android:layout_below="@id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/text_color"
             android:textSize="24sp"
             android:text="Above Age 18 " />
@@ -206,18 +214,19 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_below="@id/item6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/item6"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amarante"
+            android:text="Nutrition"
             android:textColor="@color/text_color"
-            android:textSize="24sp"
-            android:text="Nutrition" />
+            android:textSize="24sp" />
 
         <include
             android:id="@+id/item7"
-            layout="@layout/item1_layout"
+            layout="@layout/nutrition_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"

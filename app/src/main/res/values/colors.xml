@@ -10,7 +10,7 @@
 
     <!-- Color Selection for Dashboard Activity -->
     <color name="bg_view">#02122C</color>
-    <color name="text_color">#09C153</color>
+    <color name="text_color">#11ED69</color>
 
 
 </resources>
