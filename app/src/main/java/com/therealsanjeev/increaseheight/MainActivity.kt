@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding.dashboardActivity.setOnClickListener {
             val dashboardActivityIntent = Intent(this, DashboardActivity::class.java)
             startActivity(dashboardActivityIntent)
-            
+
         }
 
 
