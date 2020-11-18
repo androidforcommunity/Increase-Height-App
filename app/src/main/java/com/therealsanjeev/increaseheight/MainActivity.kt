@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
 
         //Initializing the NavController
         val navController = this.findNavController(R.id.mNavHostFragment)
-
         //Link the NavController to our ActionBar
 
 
