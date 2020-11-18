@@ -5,17 +5,17 @@
    >
     
     <LinearLayout
+        android:id="@+id/layout_raw"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        
-        <fragment
-            android:id="@+id/myNavHostFragment"
-            android:name="com.therealsanjeev.increaseheight.starter.NameFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:defaultNavHost="true"/>
 
+
+        <Button
+            android:id="@+id/fragment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Fragment" />
     </LinearLayout>
 
 </layout>

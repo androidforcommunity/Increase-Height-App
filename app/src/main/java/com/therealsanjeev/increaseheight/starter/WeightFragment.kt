@@ -22,12 +22,11 @@ class WeightFragment : Fragment() {
            inflater, R.layout.fragment_weight, container, false
        )
 
-       binding.doneBtnName.setOnClickListener {
-           Toast.makeText(context, "Let's go to MainActivity", Toast.LENGTH_SHORT).show()
+        
 
-       }
-
-       return binding.root
+        return binding.root
     }
+
+
 
 }
