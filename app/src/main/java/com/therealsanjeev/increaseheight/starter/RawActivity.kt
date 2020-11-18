@@ -3,12 +3,8 @@ package com.therealsanjeev.increaseheight.starter
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.databinding.DataBindingUtil
-import com.therealsanjeev.increaseheight.MainActivity
 import com.therealsanjeev.increaseheight.R
-import com.therealsanjeev.increaseheight.databinding.ActivityMainBinding
-import com.therealsanjeev.increaseheight.databinding.ActivityMainBindingImpl
 import com.therealsanjeev.increaseheight.databinding.ActivityRawBinding
 
 class RawActivity : AppCompatActivity() {
