@@ -15,7 +15,7 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_dashboard)
 
 
-       
+
 
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
         val relativeLayoutBounce = findViewById<RelativeLayout>(R.id.item1)
@@ -26,10 +26,8 @@ class DashboardActivity : AppCompatActivity() {
         val nutritionLayout = findViewById<LinearLayout>(R.id.item7)
         nutritionLayout.setOnClickListener {
             nutritionLayout.startAnimation(bounceAnimation)
-            val intent = Intent(this, RawActivity::class.java)
+            val intent = Intent(this, NutritionActivity::class.java)
             startActivity(intent)
-
-
 
         }
 
