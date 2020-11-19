@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".NutritionActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/awesome_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/bg_view"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,13 +19,51 @@
         app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-    <TextView
-        android:layout_width="82dp"
-        android:layout_height="10dp"
-        android:text="Hello World"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="Change Plan"
+            android:background="@drawable/btn_gradient"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp" />
+
+
+        <Button
+            android:id="@+id/btn2"
+            android:background="@drawable/btn_gradient"
+            android:text="Use This Plan"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
