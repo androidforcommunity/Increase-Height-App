@@ -5,13 +5,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.ActionBar
+import androidx.databinding.DataBindingUtil
+import com.therealsanjeev.increaseheight.databinding.ActivityRawBinding
 import kotlinx.android.synthetic.main.activity_nutrition.*
 
 class NutritionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nutrition)
+        //setContentView(R.layout.activity_nutrition)
         customActionBar()
+
+        @Suppress("UNUSED_VARIABLE")
+        val binding = DataBindingUtil.setContentView<ActivityRawBinding>(this, R.layout.activity_nutrition)
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -20,7 +27,7 @@ class NutritionActivity : AppCompatActivity() {
     }
 
 
-    fun customActionBar() {
+    private fun customActionBar() {
         setSupportActionBar(findViewById(R.id.awesome_toolbar))
         awesome_toolbar.setTitleTextColor(Color.WHITE)
 
