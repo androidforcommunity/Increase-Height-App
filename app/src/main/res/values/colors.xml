@@ -12,5 +12,7 @@
     <color name="bg_view">#0E2345</color>
     <color name="text_color">#11ED69</color>
 
+    <color name="background_nutrient">#002651</color>
+
 
 </resources>

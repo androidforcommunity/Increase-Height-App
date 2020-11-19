@@ -17,10 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".starter.RawActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
-
+        <activity android:name=".NutritionActivity"/>
+        <activity android:name=".SplashScreen"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
