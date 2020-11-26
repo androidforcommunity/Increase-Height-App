@@ -20,5 +20,8 @@
     <string name="female">Female</string>
     <string name="age_num">25</string>
 
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
 
 </resources>
