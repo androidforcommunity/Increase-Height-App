@@ -2,9 +2,11 @@
 <LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bg_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ScrollView
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,6 +19,7 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
+                android:elevation="4dp"
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -127,12 +130,12 @@
 
             </LinearLayout>
 
-            <View
-                android:id="@+id/h_line0"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_below="@id/linearLayout"
-                android:background="#7A7A7A" />
+<!--            <View-->
+<!--                android:id="@+id/h_line0"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:layout_below="@id/linearLayout"-->
+<!--                android:background="#7A7A7A" />-->
 
             <TextView
                 android:id="@+id/textView"
