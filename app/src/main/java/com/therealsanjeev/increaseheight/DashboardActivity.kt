@@ -23,9 +23,10 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.dashboard.*
+import java.lang.RuntimeException
 import androidx.navigation.ui.AppBarConfiguration as AppBarConfiguration1
 
-class DashboardActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
+class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var toggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,9 +35,7 @@ class DashboardActivity : AppCompatActivity(),NavigationView.OnNavigationItemSel
         setUpToolBar()
 
 
-
 //        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
-
 
 
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
@@ -49,24 +48,31 @@ class DashboardActivity : AppCompatActivity(),NavigationView.OnNavigationItemSel
         val nutritionPlan = findViewById<LinearLayout>(R.id.item7)
         nutritionPlan.setOnClickListener {
             nutritionPlan.startAnimation(bounceAnimation)
-            try {
-                 val intent = Intent(this, NutritionActivity::class.java)
-                startActivity(intent)
-            } catch (e : NullPointerException){
-                Toast.makeText(this, "Error " + e.message, Toast.LENGTH_SHORT).show()
+
+            try{
+                startActivity(Intent(applicationContext, NutritionActivity::class.java))
+            }catch (e: RuntimeException){
+                Toast.makeText(applicationContext, e.message, Toast.LENGTH_SHORT).show()
             }
+
 
         }
 
     }
 
     private fun setUpToolBar() {
-        setSupportActionBar(toolBar)
-        val actionbar=supportActionBar
-        actionbar?.title ="Increase Height!!!"
+        setSupportActionBar(toolBar as Toolbar?)
+        val actionbar = supportActionBar
+        actionbar?.title = "Increase Height!!!"
 
-        toggle= ActionBarDrawerToggle(this,drawer_layout,toolBar,R.string.open,R.string.close)
-        toggle.isDrawerIndicatorEnabled=true
+        toggle = ActionBarDrawerToggle(
+            this,
+            drawer_layout,
+            toolBar as Toolbar?,
+            R.string.open,
+            R.string.close
+        )
+        toggle.isDrawerIndicatorEnabled = true
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
         nav_view.setNavigationItemSelectedListener(this)
@@ -79,14 +85,18 @@ class DashboardActivity : AppCompatActivity(),NavigationView.OnNavigationItemSel
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(toggle.onOptionsItemSelected(item))
+        if (toggle.onOptionsItemSelected(item))
             return true
-        when(item.itemId){
+        when (item.itemId) {
 
-            R.id.side_noti_notification -> Toast.makeText(applicationContext,
-                "Notification",Toast.LENGTH_SHORT).show()
-            R.id.side_noti_setting ->Toast.makeText(applicationContext,
-                "Setting",Toast.LENGTH_SHORT).show()
+            R.id.side_noti_notification -> Toast.makeText(
+                applicationContext,
+                "Notification", Toast.LENGTH_SHORT
+            ).show()
+            R.id.side_noti_setting -> Toast.makeText(
+                applicationContext,
+                "Setting", Toast.LENGTH_SHORT
+            ).show()
         }
 
         return super.onOptionsItemSelected(item)
@@ -98,9 +108,9 @@ class DashboardActivity : AppCompatActivity(),NavigationView.OnNavigationItemSel
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
+        when (item.itemId) {
 
-            R.id.nav_nutrition ->{
+            R.id.nav_nutrition -> {
                 val intent = Intent(this, NutritionActivity::class.java)
                 startActivity(intent)
             }

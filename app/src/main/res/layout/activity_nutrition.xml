@@ -20,13 +20,13 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
 
-    <fragment
-        android:id="@+id/fragment1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="12"
-        android:orientation="vertical"
-        tools:layout="@layout/fragment_daily_nutrient" />
+<!--    <fragment-->
+<!--        android:id="@+id/fragment1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="12"-->
+<!--        android:orientation="vertical"-->
+<!--        tools:layout="@layout/fragment_daily_nutrient" />-->
 
     <RelativeLayout
         android:id="@+id/linearLayoutBtn"

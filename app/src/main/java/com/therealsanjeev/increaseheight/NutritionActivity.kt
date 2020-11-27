@@ -12,11 +12,11 @@ import kotlinx.android.synthetic.main.activity_nutrition.*
 class NutritionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_nutrition)
+        setContentView(R.layout.activity_nutrition)
         customActionBar()
-
-        @Suppress("UNUSED_VARIABLE")
-        val binding = DataBindingUtil.setContentView<ActivityRawBinding>(this, R.layout.activity_nutrition)
+//
+//        @Suppress("UNUSED_VARIABLE")
+//        val binding = DataBindingUtil.setContentView<ActivityRawBinding>(this, R.layout.activity_nutrition)
 
 
     }
@@ -38,7 +38,7 @@ class NutritionActivity : AppCompatActivity() {
         }
 
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
-        setTitle(resources.getText(R.string.nutrition_chart))
+        title = resources.getText(R.string.nutrition_chart)
     }
 
 }
