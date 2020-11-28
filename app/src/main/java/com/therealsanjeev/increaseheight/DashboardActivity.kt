@@ -35,7 +35,10 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         setUpToolBar()
 
 
-//        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+//        window.setFlags(
+//            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//            WindowManager.LayoutParams.FLAG_FULLSCREEN
+//        )
 
 
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
@@ -49,9 +52,9 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         nutritionPlan.setOnClickListener {
             nutritionPlan.startAnimation(bounceAnimation)
 
-            try{
+            try {
                 startActivity(Intent(applicationContext, NutritionActivity::class.java))
-            }catch (e: RuntimeException){
+            } catch (e: RuntimeException) {
                 Toast.makeText(applicationContext, e.message, Toast.LENGTH_SHORT).show()
             }
 
