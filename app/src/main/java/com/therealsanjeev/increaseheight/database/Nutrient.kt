@@ -8,8 +8,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "Nutrition List")
 data class Nutrient(
-    @ColumnInfo @PrimaryKey(autoGenerate = true) var uid: Long = 0,
+    @PrimaryKey(autoGenerate = true) var uid: Int,
     @ColumnInfo(name = "food_name") val foodName: String?,
     //@ColumnInfo(name = "food_picture") val foodPicture: Bitmap?
-    @Ignore val foodPicture: Bitmap?
+   // @Ignore val foodPicture: Bitmap?
 )
