@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashBoard"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+    <item
+        android:icon="@drawable/ic_baseline_timeline_24"
+        android:id="@+id/nutritions"
+        android:title="Nutritions" />
+    <item
+        android:icon="@drawable/ic_baseline_leaderboard_24"
+        android:id="@+id/reports"
+        android:title="Reports" />
+    <item
+        android:id="@+id/me"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Me" />
+</menu>

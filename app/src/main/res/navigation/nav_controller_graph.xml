@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashBoard">
+    <fragment
+        android:id="@+id/dashBoard"
+        android:name="com.therealsanjeev.increaseheight.fragment.DashBoard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashBoard_to_reports"
+            app:destination="@id/reports" />
+    </fragment>
+    <fragment
+        android:id="@+id/nutritions"
+        android:name="com.therealsanjeev.increaseheight.fragment.Nutritions"
+        android:label="fragment_nutritions"
+        tools:layout="@layout/fragment_nutritions" >
+        <action
+            android:id="@+id/action_nutritions2_to_me"
+            app:destination="@id/me" />
+    </fragment>
+    <fragment
+        android:id="@+id/reports"
+        android:name="com.therealsanjeev.increaseheight.fragment.Reports"
+        android:label="fragment_reports"
+        tools:layout="@layout/fragment_reports" >
+        <action
+            android:id="@+id/action_reports_to_nutritions2"
+            app:destination="@id/nutritions" />
+    </fragment>
+    <fragment
+        android:id="@+id/me"
+        android:name="com.therealsanjeev.increaseheight.fragment.me"
+        android:label="fragment_me"
+        tools:layout="@layout/fragment_me" />
+</navigation>

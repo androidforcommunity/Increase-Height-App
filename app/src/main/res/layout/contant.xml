@@ -130,12 +130,6 @@
 
             </LinearLayout>
 
-<!--            <View-->
-<!--                android:id="@+id/h_line0"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="2dp"-->
-<!--                android:layout_below="@id/linearLayout"-->
-<!--                android:background="#7A7A7A" />-->
 
             <TextView
                 android:id="@+id/textView"

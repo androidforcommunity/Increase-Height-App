@@ -1,13 +1,22 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="NavigatioDrawer" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="NavigatioDrawer" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#02122C</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
+    <style name="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
+    <style name="CustomText">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">13sp</item>
+    </style>
     <!-- Fragment Question Style -->
     <style name="TextViewQuestionStyle">
         <item name="android:layout_width">match_parent</item>
