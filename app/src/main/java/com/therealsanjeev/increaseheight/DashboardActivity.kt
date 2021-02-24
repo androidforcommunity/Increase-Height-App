@@ -1,33 +1,25 @@
 package com.therealsanjeev.increaseheight
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
-
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_dashboard.*
 
-
-import kotlinx.android.synthetic.main.dashboard.*
-import nl.joery.animatedbottombar.AnimatedBottomBar
-
-class DashboardActivity : AppCompatActivity() {
+class DashboardActivity : AppCompatActivity(R.layout.activity_dashboard) {
 
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
-        setContentView(R.layout.dashboard)
         super.onCreate(savedInstanceState)
+        try {
+            this.supportActionBar!!.hide()
+        } catch (e: NullPointerException) {
+        }
 //        navController = findNavController(R.id.main_fragment)
-
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.main_fragment) as NavHostFragment
-        val navController = navHostFragment.navController
-        findViewById<BottomNavigationView>(R.id.bottom_bar)
-            .setupWithNavController(navController)
+        navController = findNavController(R.id.main_fragment)
+        setupActionBarWithNavController(navController)
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.bottom_menu, menu)

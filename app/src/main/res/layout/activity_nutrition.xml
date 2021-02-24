@@ -19,6 +19,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ImageView>
+
 
 <!--    <fragment-->
 <!--        android:id="@+id/fragment1"-->

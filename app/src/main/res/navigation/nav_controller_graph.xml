@@ -3,33 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/dashBoard_fragment">
+    app:startDestination="@id/dashBoard_nav">
     <fragment
-        android:id="@+id/dashBoard_fragment"
-        android:name="com.therealsanjeev.increaseheight.fragment.DashBoard"
+
+        android:id="@+id/dashBoard_nav"
+        android:name="com.therealsanjeev.increaseheight.navcontroller.DashBoard"
+        android:label="Dashboard"
         tools:layout="@layout/fragment_dashboard" >
         <action
-            android:id="@+id/action_dashBoard_fragment_to_reports_fragment"
-            app:destination="@id/reports_fragment" />
+            android:id="@+id/action_dashBoard_to_nutritions"
+            app:destination="@id/nutritions_nav" />
     </fragment>
     <fragment
-        android:id="@+id/nutritions_fragment"
-        android:name="com.therealsanjeev.increaseheight.fragment.Nutritions"
+        android:id="@+id/nutritions_nav"
+        android:name="com.therealsanjeev.increaseheight.navcontroller.Nutritions"
+        android:label="Nutrition's"
         tools:layout="@layout/fragment_nutritions" >
         <action
-            android:id="@+id/action_nutritions_fragment_to_me_fragment"
-            app:destination="@id/me_fragment" />
+            android:id="@+id/action_nutritions_to_reports"
+            app:destination="@id/reports_nav" />
     </fragment>
     <fragment
-        android:id="@+id/reports_fragment"
-        android:name="com.therealsanjeev.increaseheight.fragment.Reports"
+        android:id="@+id/reports_nav"
+        android:name="com.therealsanjeev.increaseheight.navcontroller.Reports"
+        android:label="Repot's"
         tools:layout="@layout/fragment_reports" >
         <action
-            android:id="@+id/action_reports_fragment_to_nutritions_fragment"
-            app:destination="@id/nutritions_fragment" />
+            android:id="@+id/action_reports_to_me"
+            app:destination="@id/me_nav" />
     </fragment>
     <fragment
-        android:id="@+id/me_fragment"
-        android:name="com.therealsanjeev.increaseheight.fragment.me"
+        android:id="@+id/me_nav"
+        android:name="com.therealsanjeev.increaseheight.navcontroller.me"
+        android:label="Me :)"
         tools:layout="@layout/fragment_me" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.therealsanjeev.increaseheight.fragment
+package com.therealsanjeev.increaseheight.navcontroller
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.therealsanjeev.increaseheight.R
 
-class Reports : Fragment() {
+class DashBoard : Fragment() {
 
 
     override fun onCreateView(
@@ -15,7 +15,8 @@ class Reports : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view=inflater.inflate(R.layout.fragment_reports, container, false)
+        val view=inflater.inflate(R.layout.fragment_dashboard, container, false)
+
         return view
     }
 

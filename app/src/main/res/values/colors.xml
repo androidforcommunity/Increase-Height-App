@@ -7,7 +7,8 @@
     <color name="colorExtra">#1774AC</color>
     <color name="textColor">#FFFFFF</color>
 
-
+    <color name="background">#f5f5f5</color>
+    <color name="divider">#E4E4E4</color>
     <!-- Color Selection for Dashboard Activity -->
     <color name="bg_view">#0E2345</color>
     <color name="text_color">#11ED69</color>
