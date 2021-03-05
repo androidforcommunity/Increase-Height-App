@@ -2,9 +2,11 @@
 <LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/bg_view"
+    android:background="@color/white"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
+
     <ScrollView
 
         android:layout_width="match_parent"
@@ -23,16 +25,18 @@
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/bg_view"
+                android:background="@color/white"
                 android:orientation="vertical"
                 android:padding="10dp">
 
                 <TextView
+                    android:fontFamily="@font/gilroybold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:text="Summary Report"
-                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <LinearLayout
@@ -49,20 +53,23 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:fontFamily="@font/gilroybold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="0"
-                            android:textColor="@android:color/white"
+                            android:textColor="@color/black"
                             android:textSize="32sp"
                             android:textStyle="bold" />
 
                         <TextView
+                            android:fontFamily="@font/gilroybold"
+                            android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Exercises"
-                            android:textColor="@color/text_color"
+                            android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>
 
@@ -73,20 +80,23 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:fontFamily="@font/gilroybold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="0.0"
-                            android:textColor="@android:color/white"
+                            android:textColor="@color/black"
                             android:textSize="32sp"
                             android:textStyle="bold" />
 
                         <TextView
+                            android:fontFamily="@font/gilroybold"
+                            android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Calories"
-                            android:textColor="@color/text_color"
+                            android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>
 
@@ -97,20 +107,23 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:fontFamily="@font/gilroybold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="0:0"
-                            android:textColor="@android:color/white"
+                            android:textColor="@color/black"
                             android:textSize="32sp"
                             android:textStyle="bold" />
 
                         <TextView
+                            android:fontFamily="@font/gilroybold"
+                            android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Time"
-                            android:textColor="@color/text_color"
+                            android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>
 
@@ -118,13 +131,14 @@
                 </LinearLayout>
 
                 <TextView
+                    android:fontFamily="@font/gilroybold"
                     android:id="@+id/report"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:layout_marginTop="15dp"
                     android:text="Report >"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
 
 
@@ -132,14 +146,16 @@
 
 
             <TextView
+                android:fontFamily="@font/gilroybold"
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/linearLayout"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
+                android:textStyle="bold"
                 android:text="Above Age 18 "
-                android:textColor="@color/text_color"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <include
@@ -155,6 +171,7 @@
 
 
             <TextView
+                android:fontFamily="@font/gilroybold"
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -162,7 +179,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
                 android:text="Below Age 18 "
-                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
 
@@ -177,15 +195,16 @@
                 android:layout_marginEnd="10dp" />
 
             <TextView
+                android:fontFamily="@font/gilroybold"
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/item6"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/amarante"
                 android:text="Nutrition"
-                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <include
