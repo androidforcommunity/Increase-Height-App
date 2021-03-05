@@ -11,12 +11,12 @@
 
     <ImageView
         android:layout_marginStart="40dp"
-        android:src="@drawable/fitness_girl"
+        android:src="@drawable/ex"
         android:layout_width="match_parent"
         android:layout_height="150dp"/>
 
     <LinearLayout
-        android:id="@+id/below_18_list"
+        android:id="@+id/above_18_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
