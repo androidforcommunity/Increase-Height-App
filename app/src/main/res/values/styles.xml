@@ -1,10 +1,10 @@
 <resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimary">#BEC4E3</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowBackground">#edeef7</item>
     </style>
 
 <!--    <style name="AppTheme.NoActionBar">-->
