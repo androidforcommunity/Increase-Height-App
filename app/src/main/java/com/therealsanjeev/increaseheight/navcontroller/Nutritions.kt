@@ -16,6 +16,8 @@ class Nutritions : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view=inflater.inflate(R.layout.fragment_nutritions, container, false)
+        val toolbar = requireActivity().findViewById<View>(R.id.toolbarDashboard) as androidx.appcompat.widget.Toolbar
+        toolbar.setTitle("Nutritions")
         return view
     }
 
