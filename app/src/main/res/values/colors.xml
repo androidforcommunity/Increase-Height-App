@@ -42,4 +42,14 @@
     
 <!--    custom colors-->
     <color name="textHighlight">#5271FF</color>
+
+    <!-- Custom Colors-->
+    <color name="dark_purple">#2B32B2</color>
+    <color name="light_blue">#1488CC</color>
+    <color name="purple_mod">#283BB4</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="dark_grey">#565555</color>
+    <color name="extra_dark_grey">#81767676</color>
+    <color name="grey_light">#D9D7D7</color>
+    <color name="transparent">#80000000</color>
 </resources>

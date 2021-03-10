@@ -1,5 +1,21 @@
 <resources>
-    <string name="app_name">Increase Height</string>
+    <string name="app_name">FitIndia</string>
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="workout_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+
+    <!-- Fact of Workout -->
+    <string name="pushupTitle">PushUps</string>
+    <string name="pushupDesc">Push-ups are one of the most recognizable exercises. Look around any gym, and you’re sure to see at least a few people doing some variation of push-ups.</string>
+
+    <string name="pullupTitle">PullUps</string>
+    <string name="pullupDesc">Push-ups are one of the most recognizable exercises.
+        Look around any gym, and you’re sure to see at least a few
+        people doing some variation of push-ups.When you\'re performing a pullup, you\'re lifting your entire body mass with the movement. This can greatly improve your body strength and even improve your health. Studies show that strength training is important for promoting bone development and enhancing cardiovascular health</string>
+    <string name="play_the_workout">Play the Workout</string>
+    <string name="pause_the_workout">Pause the workout</string>
+    <string name="desc_fun_Fact">“In ancient times, powerful love potions were made using arugula and other herbs like lavender. You can gain the benefits of arugula by eating it regularly to boost sexual performance.”</string>
+
+
     <string name="app_subtitle">Increase your Height</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
