@@ -56,6 +56,13 @@
         <item name="android:layout_width">162dp</item>
     </style>
 
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="android:background">@color/extra_dark_grey</item>
+        <item name="backgroundTint">@color/extra_dark_grey</item>
+    </style>
+
 
 
 </resources>

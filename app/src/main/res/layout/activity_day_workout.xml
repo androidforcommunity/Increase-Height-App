@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/material_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dark_purple"
+        app:titleTextColor="@color/white"
+        app:title="Day 1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/workout_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/start_btn"
+        android:layout_below="@id/material_toolbar"
+        android:layout_marginTop="6dp"
+        tools:itemCount="20"
+        tools:listitem="@layout/workout_single_item" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/dark_purple"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="10dp"
+        android:text="Start"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded" />
+
+
+</RelativeLayout>

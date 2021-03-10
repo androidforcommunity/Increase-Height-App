@@ -49,9 +49,9 @@ class WorkoutTimelineActivity : AppCompatActivity(), DayRecyclerAdapter.onItemCl
 
     override fun onClick(position: Int) {
         val dayTitle = dayList[position].dayName
-        Toast.makeText(this, "Clicked on the $dayTitle", Toast.LENGTH_SHORT).show()
-        //val intent = Intent(this, DayActivity::class.java)
-        //intent.putExtra("key", dayTitle)
-        //startActivity(intent)
+        //Toast.makeText(this, "Clicked on the $dayTitle", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, DayActivity::class.java)
+        intent.putExtra("key", dayTitle)
+        startActivity(intent)
     }
 }
